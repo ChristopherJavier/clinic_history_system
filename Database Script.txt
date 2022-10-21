@@ -1,0 +1,25 @@
+CREATE DATABASE datos_personales;
+SHOW databases;
+use datos_personales;
+
+CREATE TABLE paciente (
+	id int not null auto_increment,
+    nombre varchar(55) not null,
+    apellido varchar(55) not null,
+    numero integer not null,
+    PRIMARY KEY (id)
+    );
+    
+INSERT INTO paciente (nombre, apellido, numero) 
+	VALUES 
+    ('Manuel Lorenzo','Estevez',8090004543),
+    ('Carmen Miranda','Estrella',8290004541),
+    ('Julio Antonio','Miranda',8290000643),
+    ('Henry Noboa','Baez',8090004531),
+    ('Robin Yciano','Gutierrez',8090004345),
+    ('Geraldin Enmanuel','Bodre',8090007035),
+    ('Katherine','Estevez',8090006570),
+    ('Saira ','Hernandez ',8090000367),
+    ('Melissa Mercedes','Diaz Paredes',8090005423);
+    
+SELECT * FROM paciente;
